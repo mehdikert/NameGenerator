@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*********************** FONNT *********************************/
+@font-face {
+    font-family: 'crotah';
+    src: url(font/CrotahFreeVersionItalic-z8Ev3.ttf);
+}
+
+/***************************************************************/
+body {
+    background: #403a3e;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #403a3e, #be5869);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #403a3e, #be5869);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.border {
+    width: max-content;
+    background: #403a3e;
+    background: -webkit-linear-gradient(to left, #403a3e, #be5869);
+    background: linear-gradient(to left, #403a3e, #be5869);
+    padding: 4px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 25vh;
+
+    /*transform: translate(-50%, -60%);*/
+}
+
+.container {
+    background-color: rgba(107, 106, 68, 0.589);
+    width: max-content;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: 'crotah';
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+.result {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+
+.result input {
+    padding: 15px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.result input:hover {
+    background-color: #be5869;
+    transition-duration: 1s;
+    color: white;
+}
+
+
+
+/*
+.border:hover {
+    transform: scale(1.3);
+    transition-duration: 2s;
+
+}*/
+
+@media (max-width :490px) {
+    .result {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+
+    .container {
+        padding: 20px 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem
+    }
+
+    #identity {
+        font-size: 1.3rem;
+    }
+
+    .result input {
+        width: 50vw;
+        padding: 15px 15px;
+    }
+}
+
+@media (min-width : 600px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width : 850px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    #identity {
+        font-size: 1.4rem;
+    }
+}
